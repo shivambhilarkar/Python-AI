@@ -15,40 +15,7 @@ engine.setProperty('voice', voices[0].id)
 
 
 print("----------------------------------------------------------------------------------------------")
-#   it shows the symbol image file of robot
-#print(''' ``````````````````````/syys/``````````````````````
-#`````````````````````+hhhhhh+`````````````````````
-#`````````````````````:hhhhhh:`````````````````````
-#``````````````````````.yhhy.``````````````````````
-#``````````````````````.yhhs.``````````````````````
-#`````````````````-/oyhhhhhhhhyo/-`````````````````
-#``````````````./yhhhhhhhhhhhhhhhhy/```````````````
-#`````````````/yhhhhhhhhhhhhhhhhhhhhy/`````````````#
-#````````````shhhhhhhhhhhhhhhhhhhhhhhho````````````
-#```````````ohhhhhhhhhhhhhhhhhhhhhhhhhho```````````
-#``````````:hhhhhhhhhhhhhhhhhhhhhhhhhhhh-``````````
-#````-+++.`+hhhhhyssyhhhhhhhhhhhysshhhhh+`.+++-````
-#```:hhhh.`ohhhs-````-shhhhhhh+.````:yhho`-hhhh:```
-#```/hhhh.`ohhh```````.hhhhhho```````/hho`-hhhh/```
-#```/hhhh.`ohhh-``````:hhhhhhy```````ohho`-hhhh/```
-#```/hhhh.`ohhhh+:--:ohhhhhhhhy+:--/shhho`-hhhh/```
-#````+yyy.`ohhhhhhhhhhhhhhhhhhhhhhhhhhhho`.yyy+````
-#``````````ohhhhhhhhyyyyyyyyyyyyhhhhhhhho``````````
-#``````````ohhhhhhh+````````````+hhhhhhho``````````
-#``````````ohhhhhhh/````````````/hhhhhhho``````````
-#``````````.-------.````````````.-------.``````````
-#``````.ooooooooooooooooooooooooooooooooooo+.``````
-#``````:hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:``````
-#``````:hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:``````
-#``````-yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-``````''')
 
-
-#      for showing imagge in python
-# importing Image class from PIL package 
-#from PIL import Image 
-# creating a object 
-#im = Image.open("E:\py\jarvis.jpg")
-#im.show() 
 
 
 
@@ -70,10 +37,10 @@ def wishMe():
     else:
        print("Good Evening")
        speak("Good Evening!")  
-  #  print("I am Jarvis Sir. Please tell me how may I help you") 
-    print("Hello World I am Robot")#Speed 1 terahertz, memory 1 zeta byte.")
-   # speak("I am Jarvis Sir. Please tell me how may I help you") 
-    speak("Hello World I am Robot")# Speed 1 terahertz, memory 1 zeta byte.")
+  
+    print("Hello World I am Robot Speed 1 terahertz, memory 1 zeta byte.")
+   
+    speak("Hello World I am Robot Speed 1 terahertz, memory 1 zeta byte.")
 
     print("how may i help you sir")
     speak("how may i help yu sir")  
@@ -148,25 +115,19 @@ if __name__ == "__main__":
         elif 'open gmail' in query:
             webbrowser.open("www.gmail.com") 
 
-        elif 'play music' in query:
-            music_dir = 'E:\\study\\j7prime\\mymusic\\My Music'
-            songs = os.listdir(music_dir)
-            print(songs)    
-            os.startfile(os.path.join(music_dir, songs[0]))
+#         elif 'play music' in query:
+#             music_dir = 'E:\\study\\j7prime\\mymusic\\My Music'
+#             songs = os.listdir(music_dir)
+#             print(songs)    
+#             os.startfile(os.path.join(music_dir, songs[0]))
         
-        #elif 'play video' in query:
-         #   video_dir='E:\\Videos\\languages'
-          #  videos = os.listdir(video_dir)
-           # print(videos)
-           #os.startfile(os.path.join(video_dir, videos[0]))
+       
 
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             speak(f"Sir, the time is {strTime}")
 
-       # elif 'open code' in query:
-        #    codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
-        #    os.startfile(codePath)
+       
 
         elif 'email to shivam' in query:
             try:
